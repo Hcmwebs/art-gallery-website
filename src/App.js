@@ -1,12 +1,15 @@
 
-import './App.css';
+import Home from './pages/Home';
+import Location from './pages/Location';
 
 function App() {
   return (
-    <header className="App">
-      <h1>art gallery</h1>
-    </header>
-  );
+    <div className="container">
+      <Home />
+      <Location />
+
+    </div>
+  )
 }
 
 export default App;
