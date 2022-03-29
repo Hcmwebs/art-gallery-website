@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaChevronLeft, FaLocationArrow } from 'react-icons/fa';
-import Footer from '../Components/Footer';
+
 import { Link } from 'react-router-dom';
 
 const Location = () => {
@@ -31,7 +31,6 @@ const Location = () => {
 					</p>
 				</section>
 			</main>
-			<Footer />
 		</>
 	);
 };
