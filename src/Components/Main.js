@@ -5,7 +5,7 @@ const Main = () => {
 		<main className='main'>
 			<section className='section'>
 				<div className='section-image'>
-					<img src='' alt='section image' className='img' />
+					<img src='' alt='' className='img' />
 				</div>
 				<div className='section-text'>
 					<h2>Your day at the gallery</h2>
