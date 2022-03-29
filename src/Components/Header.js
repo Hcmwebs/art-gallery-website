@@ -15,17 +15,17 @@ const Header = () => {
 				<picture>
 					<source
 						srcset={imageHeroMobile}
-						media='(min-width: 375px)'
+						media='(max-width: 375px)'
 						size={imageHeroMobile2x}
 					/>
 					<source
 						srcset={imageHeroTablet}
-						media='(min-width: 768px)'
+						media='(max-width: 768px)'
 						size={imageHeroTablet2x}
 					/>
 					<source
 						srcset={imageHeroDesktop}
-						media='(min-width: 1440px)'
+						media='(max-width: 1440px)'
 						size={imageHeroDesktop2x}
 					/>
 					<img src={imageHeroMobile} alt='hero' className='img' />
