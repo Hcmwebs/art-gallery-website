@@ -1,16 +1,18 @@
 import React from 'react';
-import {
-	FaChevronLeft,
-	FaLocationArrow,
-} from 'react-icons/fa';
+import { FaChevronLeft, FaLocationArrow } from 'react-icons/fa';
 import Footer from '../Components/Footer';
+import { Link } from 'react-router-dom';
+
 const Location = () => {
 	return (
 		<>
 			<main className='main'>
-				<button className='btn'>
+				<Link to='/' className='btn'>
 					<span>{<FaChevronLeft />}</span>Back to Home
-				</button>
+				</Link>
+				<div className='location'>
+					<FaLocationArrow />
+				</div>
 				<section className='section'>
 					<h2>Our location</h2>
 					<address>

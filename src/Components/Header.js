@@ -6,6 +6,7 @@ import imageHeroMobile2x from '../assets/mobile/image-hero@2x.jpg';
 import imageHeroTablet2x from '../assets/tablet/image-hero@2x.jpg';
 import imageHeroTablet from '../assets/tablet/image-hero.jpg';
 import { FaChevronRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
@@ -37,9 +38,9 @@ const Header = () => {
 					a spark of inspiration. Will these pieces inspire you? Visit us and
 					find out.
 				</p>
-				<button className='btn'>
+				<Link to='/location' className='btn'>
 					Our location <span>{<FaChevronRight />}</span>
-				</button>
+				</Link>
 			</div>
 		</header>
 	);
