@@ -2,9 +2,6 @@ import React from 'react';
 import {
 	FaChevronLeft,
 	FaLocationArrow,
-	FaTwitter,
-	FaInstagram,
-	FaFacebookSquare,
 } from 'react-icons/fa';
 import Footer from '../Components/Footer';
 const Location = () => {
