@@ -10,9 +10,27 @@ const Footer = () => {
 				week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
 			</p>
 			<div className='social-media'>
-				<FaFacebookSquare />
-				<FaInstagram />
-				<FaTwitter />
+				<a
+					href='https://facebook.com/'
+					target='_blank'
+					rel='noopener noreferrer'
+					className='btn'>
+					<FaFacebookSquare />
+				</a>
+				<a
+					href='https://instagram.com/'
+					target='_blank'
+					rel='noopener noreferrer'
+					className='btn'>
+					<FaInstagram />
+				</a>
+				<a
+					href='https://twitter.com/'
+					target='_blank'
+					rel='noopener noreferrer'
+					className='btn'>
+					<FaTwitter />
+				</a>
 			</div>
 		</footer>
 	);
