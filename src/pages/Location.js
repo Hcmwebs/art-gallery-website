@@ -2,6 +2,7 @@ import React from 'react';
 import { FaChevronLeft, FaLocationArrow } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
+import Map from '../Components/Map';
 
 const Location = () => {
 	return (
@@ -10,9 +11,7 @@ const Location = () => {
 				<Link to='/' className='btn'>
 					<span>{<FaChevronLeft />}</span>Back to Home
 				</Link>
-				<div className='location'>
-					<FaLocationArrow />
-				</div>
+				<Map />
 				<section className='section'>
 					<h2>Our location</h2>
 					<address>
