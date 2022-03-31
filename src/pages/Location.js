@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaChevronLeft, FaLocationArrow } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
 import Map from '../Components/Map';
@@ -9,7 +8,14 @@ const Location = () => {
 		<>
 			<main className='main'>
 				<Link to='/' className='btn'>
-					<span>{<FaChevronLeft />}</span>Back to Home
+					<svg
+						className='arrow'
+						width='10'
+						height='24'
+						xmlns='http://www.w3.org/2000/svg'>
+						<path stroke='#FFF' fill='none' d='M9 24 1 12 9 0' />
+					</svg>
+					Back to Home
 				</Link>
 				<Map />
 				<section className='section'>

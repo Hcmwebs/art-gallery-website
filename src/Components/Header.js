@@ -5,7 +5,6 @@ import imageHeroDesktop from '../assets/desktop/image-hero.jpg';
 import imageHeroMobile2x from '../assets/mobile/image-hero@2x.jpg';
 import imageHeroTablet2x from '../assets/tablet/image-hero@2x.jpg';
 import imageHeroDesktop2x from '../assets/desktop/image-hero@2x.jpg';
-import { FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -39,7 +38,14 @@ const Header = () => {
 					find out.
 				</p>
 				<Link to='/location' className='btn'>
-					Our location <span>{<FaChevronRight />}</span>
+					Our location
+					<svg
+						className='arrow'
+						width='10'
+						height='24'
+						xmlns='http://www.w3.org/2000/svg'>
+						<path stroke='#FFF' fill='none' d='m1 0 8 12-8 12' />
+					</svg>
 				</Link>
 			</div>
 		</header>

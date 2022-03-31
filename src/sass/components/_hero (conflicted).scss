@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.hero {
+	&-image {
+		display: grid;
+		place-items: center;
+	}
+	&-text {
+		padding-inline: 0.9rem;
+		@include grid(center);
+		justify-content: start;
+		gap: 1.8rem;
+
+		h1 {
+			font-size: 3.33rem;
+			line-height: 3.1rem;
+			margin-top: 1.8rem;
+		}
+		p {
+			line-height: 1.6rem;
+		}
+		.btn {
+			width: 200px;
+			height: 72px;
+			justify-content: space-between;
+			span {
+				background-color: red;
+				border:1px solid #000;
+				font-size: 1rem;
+			}
+		}
+	}
+}
