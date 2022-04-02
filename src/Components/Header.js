@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
-		<header>
+		<header className='header'>
 			<div className='hero-image'>
 				<picture>
 					<source
@@ -27,7 +27,7 @@ const Header = () => {
 						media='(max-width: 1440px)'
 						size={imageHeroDesktop2x}
 					/>
-					<img src={imageHeroMobile} alt='hero' className='img' />
+					<img src={imageHeroDesktop} alt='hero' className='img' />
 				</picture>
 			</div>
 			<div className='hero-text'>
