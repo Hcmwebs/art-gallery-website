@@ -1,2 +1,21 @@
 @use '../abstracts' as *;
 
+.hero {
+	@include grid(center);
+	gap: 1.8rem;
+
+	&-text {
+		padding-inline: 0.9rem;
+		@include grid(center);
+		gap: 1.8rem;
+
+		.title {
+			max-width: 100%;
+			border: 2px dashed green;
+		}
+
+		.btn {
+			max-width: 260px;
+		}
+	}
+}

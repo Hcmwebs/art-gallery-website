@@ -10,27 +10,30 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 	return (
 		<header className='header'>
-			<picture>
-				<source
-					srcset={imageHeroMobile}
-					media='(max-width: 375px)'
-					size={imageHeroMobile2x}
-				/>
-				<source
-					srcset={imageHeroTablet}
-					media='(max-width: 768px)'
-					size={imageHeroTablet2x}
-				/>
-				<source
-					srcset={imageHeroDesktop}
-					media='(max-width: 1440px)'
-					size={imageHeroDesktop2x}
-				/>
-				<img src={imageHeroDesktop} alt='hero' className='img' />
-			</picture>
+			<div className='hero'>
+				<div className='hero-image'>
+					<picture>
+						<source
+							srcset={imageHeroMobile}
+							media='(max-width: 375px)'
+							size={imageHeroMobile2x}
+						/>
+						<source
+							srcset={imageHeroTablet}
+							media='(max-width: 768px)'
+							size={imageHeroTablet2x}
+						/>
+						<source
+							srcset={imageHeroDesktop}
+							media='(max-width: 1440px)'
+							size={imageHeroDesktop2x}
+						/>
+						<img src={imageHeroDesktop} alt='hero' className='img' />
+					</picture>
+				</div>
 
-			<h1> Modern Art Gallery</h1>
-			<div className='hero-text'>
+				<div className='hero-text'>
+				<h1 className='title'> Modern Art Gallery</h1>
 				<p>
 					The arts in the collection of the Modern Art Gallery all started from
 					a spark of inspiration. Will these pieces inspire you? Visit us and
@@ -47,6 +50,9 @@ const Header = () => {
 					</svg>
 				</Link>
 			</div>
+			</div>
+
+
 		</header>
 	);
 };
