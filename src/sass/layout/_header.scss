@@ -3,6 +3,9 @@
 	place-items: center;
 	grid-template-columns: 1fr;
 	gap: 2rem;
+	border: 2px dashed red;
+
+	max-height: 800px;
 }
 
 @media (min-width: 768px) {
