@@ -1,23 +1,32 @@
-.header {
-	display: grid;
-	place-items: center;
-	grid-template-columns: 1fr;
-	gap: 2rem;
-	border: 2px dashed red;
+@use '../abstracts' as *;
 
-	max-height: 800px;
+.header {
+	@include grid(center);
+	grid-template-columns: 1fr;
+	border: 2px dashed red;
+	max-height: 44.45rem;
+	position: relative;
+	gap: 1.8rem;
 }
 
 @media (min-width: 768px) {
 	.header {
-		height: 700px;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
 @media (min-width: 1440px) {
 	.header {
-		height: 800px;
 		grid-template-columns: repeat(2, 1fr);
+
+		&::before {
+			content: '';
+			width: 450px;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			background-color: #000;
+			z-index: 1;
+		}
 	}
 }
