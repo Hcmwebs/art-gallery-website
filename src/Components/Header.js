@@ -33,26 +33,26 @@ const Header = () => {
 				</div>
 
 				<div className='hero-text'>
-				<h1 className='title'> Modern Art Gallery</h1>
-				<p>
-					The arts in the collection of the Modern Art Gallery all started from
-					a spark of inspiration. Will these pieces inspire you? Visit us and
-					find out.
-				</p>
-				<Link to='/location' className='btn'>
-					Our location
-					<svg
-						className='arrow'
-						width='10'
-						height='24'
-						xmlns='http://www.w3.org/2000/svg'>
-						<path stroke='#FFF' fill='none' d='m1 0 8 12-8 12' />
-					</svg>
-				</Link>
+					<h1 className='title'> Modern Art Gallery</h1>
+					<p>
+						The arts in the collection of the Modern Art Gallery all started
+						from a spark of inspiration. Will these pieces inspire you? Visit us
+						and find out.
+					</p>
+					<div className='btn'>
+						<Link to='/location' className='link'>
+							Our location
+						</Link>
+						<svg
+							className='arrow'
+							width='10'
+							height='24'
+							xmlns='http://www.w3.org/2000/svg'>
+							<path stroke='#FFF' fill='none' d='m1 0 8 12-8 12' />
+						</svg>
+					</div>
+				</div>
 			</div>
-			</div>
-
-
 		</header>
 	);
 };

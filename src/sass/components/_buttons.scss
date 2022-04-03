@@ -1,4 +1,5 @@
 @use '../abstracts' as *;
+@use 'sass:math';
 /* buttons */
 .btn {
 	cursor: pointer;
@@ -6,9 +7,9 @@
 	font-size: 20px;
 	font-weight: $extraBold;
 	height: 4.5rem;
-	padding: $padding $padding * 2;
-	@include flex(row, space-between, center);
+	@include flex(row, flex-start, center);
 	justify-self: start;
+	gap: math.div($gap, 2);
 	text-decoration: none;
 	border: none;
 	letter-spacing: 3.64px;
@@ -22,12 +23,18 @@
 		background: $accentColor;
 		box-shadow: $shadow-3;
 	}
+	.link {
+		text-decoration: none;
+		color: $white;
+	}
 
 	.arrow {
+
 		background-color: $accentColor;
 		color: #fff;
 		transition: $transition-5;
-		margin-left: 0.25rem;
+		height: 100%;
+		width: 3.5rem;
 	}
 
 	&:hover {
