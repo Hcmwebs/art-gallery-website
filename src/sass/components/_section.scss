@@ -2,5 +2,42 @@
 
 .section {
 	@include flex(column, center, center);
-	gap: $gap * 2;
+	gap: $gap * 1.5;
+
+	&-one {
+		.section-body {
+			@include grid(center);
+			gap: $gap * 1.25;
+
+			h2 {
+				font-size: 3.125rem;
+				line-height: 2.81rem;
+				text-transform: uppercase;
+				text-align: left;
+			}
+		}
+	}
+	&-two {
+		.section-body {
+			@include grid(center);
+			gap: $gap * 1.25;
+
+			&-body {
+				background-color: $blackColor;
+				color: $white;
+				padding-inline: $padding * 1.5;
+				padding-block: $padding * 3;
+				@include grid(center);
+				gap: $gap * 1.5;
+
+        h3{
+          font-size: 3.125rem;
+          line-height: 2.81rem;
+          justify-self: start;
+          text-transform: uppercase;
+
+        }
+			}
+		}
+	}
 }

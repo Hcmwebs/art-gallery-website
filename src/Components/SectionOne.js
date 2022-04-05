@@ -8,7 +8,7 @@ import imageGrid1Desktop2x from '../assets/desktop/image-grid-1@2x.jpg';
 
 const Section = () => {
 	return (
-		<section className='section'>
+		<section className='section section-one'>
 			<div className='section-header'>
 				<picture>
 					<source

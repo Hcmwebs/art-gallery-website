@@ -14,7 +14,7 @@ import imageGrid3Desktop3 from '../assets/desktop/image-grid-3@2x.jpg';
 
 const SectionTwo = () => {
 	return (
-		<section className='section'>
+		<section className='section section-two'>
 			<div className='section-header'>
 				<picture>
 					<source
@@ -36,10 +36,10 @@ const SectionTwo = () => {
 				<img src={imageGrid2Mobile} alt='' className='img' />
 			</div>
 			<div className='section-body'>
-				<div className='section-header'>
+				<div className='section-body-header'>
 					<img src={imageGrid3Mobile} alt='' className='img' />
 				</div>
-				<div className='section-body'>
+				<div className='section-body-body'>
 					<h3> Come &amp; be inspired</h3>
 					<p>
 						We’re excited to welcome you to our gallery and see how our

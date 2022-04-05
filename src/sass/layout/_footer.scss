@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+.footer {
+	padding-block: $padding * 2;
+	padding-inline: $padding * 3;
+	@include grid(center);
+	grid-template-columns: 1fr;
+	gap: $gap * 2.375;
+	color: $white;
+	background-color: $blackColor;
+
+	&-content {
+		@include flex(column, space-between, flex-start);
+		gap: $gap * 2.375;
+		h5 {
+			text-transform: uppercase;
+		}
+		p {
+			max-width: 17.5rem;
+		}
+	}
+
+	&-social-media {
+		@include flex(row, space-between, center);
+		gap: $gap * 1.25;
+		justify-self: start;
+
+		.link {
+			cursor: pointer;
+			font-size: 1.25rem;
+			color: $white;
+			transition: $transition-5;
+
+			&:hover {
+				color: $accentColor;
+			}
+		}
+	}
+}
