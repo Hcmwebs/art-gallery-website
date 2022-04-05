@@ -19,22 +19,30 @@
 	color: $white;
 	background-color: $blackColor;
 
+	&-location {
+		width: 264px;
+		position: absolute;
+		top: 0;
+		left: 3.5rem;
+		z-index: 999;
+	}
+	&-home {
+		max-width: 260px;
+		padding-left: $padding;
+	}
+
 	&:hover {
 		background: $accentColor;
 		box-shadow: $shadow-3;
 	}
-	.link {
-		text-decoration: none;
-		color: $white;
-	}
 
 	.arrow {
-
 		background-color: $accentColor;
 		color: #fff;
 		transition: $transition-5;
 		height: 100%;
 		width: 3.5rem;
+		padding: 1.5rem 1rem;
 	}
 
 	&:hover {

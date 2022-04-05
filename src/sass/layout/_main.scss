@@ -1,0 +1,6 @@
+@use '../abstracts/' as *;
+
+.main {
+	position: relative;
+	@include grid(center);
+}

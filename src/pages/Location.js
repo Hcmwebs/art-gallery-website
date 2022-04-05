@@ -7,7 +7,7 @@ const Location = () => {
 	return (
 		<>
 			<main className='main'>
-				<Link to='/' className='btn'>
+				<Link to='/' className='btn btn-location'>
 					<svg
 						className='arrow'
 						width='10'

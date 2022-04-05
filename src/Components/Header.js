@@ -39,10 +39,9 @@ const Header = () => {
 						from a spark of inspiration. Will these pieces inspire you? Visit us
 						and find out.
 					</p>
-					<div className='btn'>
-						<Link to='/location' className='link'>
-							Our location
-						</Link>
+
+					<Link to='/location' className='btn btn-home'>
+						Our location
 						<svg
 							className='arrow'
 							width='10'
@@ -50,7 +49,7 @@ const Header = () => {
 							xmlns='http://www.w3.org/2000/svg'>
 							<path stroke='#FFF' fill='none' d='m1 0 8 12-8 12' />
 						</svg>
-					</div>
+					</Link>
 				</div>
 			</div>
 		</header>
