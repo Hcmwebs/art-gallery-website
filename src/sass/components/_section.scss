@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+.section {
+	@include flex(column, center, center);
+	gap: $gap * 2;
+}
