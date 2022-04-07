@@ -7,7 +7,13 @@
 	grid-template-columns: 1fr;
 	gap: $gap * 2.375;
 	color: $white;
-	background-color: $blackColor;
+
+	&-home{
+		background-color: $blackColor;
+	}
+	&-location{
+		background-color: $accentColor;
+	}
 
 	&-content {
 		@include flex(column, space-between, flex-start);
