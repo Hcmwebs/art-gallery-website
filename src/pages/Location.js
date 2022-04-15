@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import { Link } from 'react-router-dom';
-import Map from '../Components/Map';
+import { Link } from 'react-router-dom'
+import Footer from '../Components/Footer'
+import Map from '../Components/Map'
 
 const Location = () => {
 	return (
@@ -36,8 +37,9 @@ const Location = () => {
 					</p>
 				</section>
 			</main>
+			<Footer />
 		</>
-	);
-};
+	)
+}
 
-export default Location;
+export default Location
