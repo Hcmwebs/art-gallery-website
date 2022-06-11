@@ -1,16 +1,16 @@
-import React from 'react';
-import imageGrid2Mobile from '../assets/mobile/image-grid-2.jpg';
-import imageGrid2Mobile2 from '../assets/mobile/image-grid-2@2x.jpg';
-import imageGrid2Tablet from '../assets/tablet/image-grid-2.jpg';
-import imageGrid2Tablet2 from '../assets/tablet/image-grid-2@2x.jpg';
-import imageGrid2Desktop from '../assets/desktop/image-grid-2.jpg';
-import imageGrid2Desktop2 from '../assets/desktop/image-grid-2@2x.jpg';
-import imageGrid3Mobile from '../assets/mobile/image-grid-3.jpg';
-import imageGrid3Mobile3 from '../assets/mobile/image-grid-3@2x.jpg';
-import imageGrid3Tablet from '../assets/tablet/image-grid-3.jpg';
-import imageGrid3Tablet3 from '../assets/tablet/image-grid-3@2x.jpg';
-import imageGrid3Desktop from '../assets/desktop/image-grid-3.jpg';
-import imageGrid3Desktop3 from '../assets/desktop/image-grid-3@2x.jpg';
+import React from 'react'
+import imageGrid2Mobile from '../assets/mobile/image-grid-2.jpg'
+import imageGrid2Mobile2 from '../assets/mobile/image-grid-2@2x.jpg'
+import imageGrid2Tablet from '../assets/tablet/image-grid-2.jpg'
+import imageGrid2Tablet2 from '../assets/tablet/image-grid-2@2x.jpg'
+import imageGrid2Desktop from '../assets/desktop/image-grid-2.jpg'
+import imageGrid2Desktop2 from '../assets/desktop/image-grid-2@2x.jpg'
+import imageGrid3Mobile from '../assets/mobile/image-grid-3.jpg'
+import imageGrid3Mobile3 from '../assets/mobile/image-grid-3@2x.jpg'
+import imageGrid3Tablet from '../assets/tablet/image-grid-3.jpg'
+import imageGrid3Tablet3 from '../assets/tablet/image-grid-3@2x.jpg'
+import imageGrid3Desktop from '../assets/desktop/image-grid-3.jpg'
+import imageGrid3Desktop3 from '../assets/desktop/image-grid-3@2x.jpg'
 
 const SectionTwo = () => {
 	return (
@@ -37,10 +37,27 @@ const SectionTwo = () => {
 			</div>
 			<div className='section-body'>
 				<div className='section-body-header'>
+					<picture>
+						<source
+							srcset={imageGrid3Desktop}
+							media='(max-width:1440px)'
+							size={imageGrid3Desktop3}
+						/>
+						<source
+							srcset={imageGrid3Tablet}
+							media='(max-width:768px)'
+							size={imageGrid3Tablet3}
+						/>
+						<source
+							srcset={imageGrid3Mobile}
+							media='(max-width:375px)'
+							size={imageGrid3Mobile3}
+						/>
+					</picture>
 					<img src={imageGrid3Mobile} alt='' className='img' />
 				</div>
 				<div className='section-body-body'>
-					<h3> Come &amp; be inspired</h3>
+					<h2> Come &amp; be inspired</h2>
 					<p>
 						We’re excited to welcome you to our gallery and see how our
 						collections influence you.
@@ -48,7 +65,7 @@ const SectionTwo = () => {
 				</div>
 			</div>
 		</section>
-	);
-};
+	)
+}
 
-export default SectionTwo;
+export default SectionTwo

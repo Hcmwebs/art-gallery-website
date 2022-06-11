@@ -3,10 +3,6 @@
 .main {
 	position: relative;
 	@include grid(center);
-
-	.article {
-		padding-inline: $padding;
-		@include grid(center);
-		gap: $gap * 2;
-	}
+	gap: $gap * 2;
+	padding-inline: $padding;
 }
