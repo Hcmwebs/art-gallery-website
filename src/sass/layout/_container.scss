@@ -1,6 +1,5 @@
 .container {
-	width: 100%;
-	max-width: 1440px;
+	width: min(100%, 1440px);
 	display: grid;
 	gap: 7.5rem;
 }

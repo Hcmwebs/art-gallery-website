@@ -11,6 +11,7 @@ const Header = () => {
 	return (
 		<header className='header'>
 			<div className='hero'>
+				<div className="hero-deco"></div>
 				<div className='hero-image'>
 					<picture>
 						<source
@@ -33,7 +34,7 @@ const Header = () => {
 				</div>
 
 				<div className='hero-text'>
-					<h1 className='title'> Modern Art Gallery</h1>
+					<h1 className='title'> <span>Moder</span>n <br/> <span>Art Gal</span>lery</h1>
 					<p>
 						The arts in the collection of the Modern Art Gallery all started
 						from a spark of inspiration. Will these pieces inspire you? Visit us

@@ -2,7 +2,15 @@
 
 .hero {
 	@include grid(center);
-	gap: 1.8rem;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+
+	&-deco {
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		display: none;
+	}
 
 	&-text {
 		padding-inline: 0.9rem;
@@ -10,10 +18,54 @@
 		gap: 1.8rem;
 
 		.title {
-			max-width: 100%;
-			border: 2px dashed green;
+			font-size: 3.75rem;
+			line-height: 3.4375rem;
+			justify-self: start;
+			
+		}
+		p {
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.hero {
+		grid-template-columns: 1.5fr 1fr;
+		position: relative;
+
+		&-text {
+			position: absolute;
+			right: 2.5rem;
+			max-width: 339px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.hero {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0;
+		&-deco {
+			display: block;
 		}
 
-		
+		&-text {
+			top: 40%;
+			right: -2%;
+			transform: translate(-50%, -50%);
+
+			.title {
+				width: 514px;
+				font-size: 6rem;
+				line-height: 5.5rem;
+				position: absolute;
+				left: -215%;
+
+				span {
+					color: #fff;
+				}
+			}
+		}
 	}
 }
