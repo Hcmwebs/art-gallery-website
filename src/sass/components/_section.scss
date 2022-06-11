@@ -5,6 +5,7 @@
 	gap: $gap * 1.5;
 
 	&-one {
+
 		.section-body {
 			@include grid(center);
 			gap: $gap * 1.25;
@@ -53,9 +54,27 @@
 @media (min-width: 768px) {
 	.section {
 		&-one {
-			@include flex(row-reverse,space-between,center);
-			.section-body{
-				width: 400px;
+			max-width: 689px;
+			max-height: 400px;
+			gap: 4rem;
+			@include flex(row-reverse, space-between, center);
+			.section-body {
+				width: 223px;
+			}
+		}
+	}
+}
+@media (min-width: 1440px) {
+	.section {
+		&-one {
+			max-width: 1109px;
+			gap: 7.8rem;
+			@include flex(row-reverse, space-between, center);
+			.section-header {
+				width: 635px;
+			}
+			.section-body {
+				width: 350px;
 			}
 		}
 	}
