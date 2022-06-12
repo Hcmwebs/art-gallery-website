@@ -1,11 +1,11 @@
 @use '../abstracts' as *;
 
 .section {
+	width: 100%;
 	@include grid(center);
 	gap: $gap * 1.5;
 
 	&-one {
-
 		.section-body {
 			@include grid(center);
 			gap: $gap * 1.25;
@@ -53,28 +53,99 @@
 
 @media (min-width: 768px) {
 	.section {
+		gap: 11px;
 		&-one {
-			max-width: 689px;
-			max-height: 400px;
+			height: 400px;
 			gap: 4rem;
 			@include flex(row-reverse, space-between, center);
+
+			.section-header {
+				width: 398px;
+				height: 400px;
+
+				.img {
+					height: 100%;
+				}
+			}
+
 			.section-body {
 				width: 223px;
+			}
+		}
+		&-two {
+			height: 720px;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 11px;
+
+			.section-header {
+				width: 398px;
+				height: 720px;
+
+				.img {
+					height: 100%;
+				}
+			}
+			.section-body {
+				width: 280px;
+				height: 100%;
+				gap: 11px;
+
+				&-header {
+					height: 313px;
+
+					.img {
+						height: 100%;
+					}
+				}
+				&-body {
+					height: 396px;
+				}
 			}
 		}
 	}
 }
 @media (min-width: 1440px) {
 	.section {
+		gap: 2rem;
 		&-one {
-			max-width: 1109px;
 			gap: 7.8rem;
 			@include flex(row-reverse, space-between, center);
 			.section-header {
-				width: 635px;
+				width: 634.43px;
+
+				.img {
+					height: 100%;
+				}
 			}
 			.section-body {
 				width: 350px;
+			}
+		}
+
+		&-two {
+			.section-header {
+				width: 634.43px;
+			}
+			.section-body {
+				width: 444.6px;
+
+				&-body {
+					width: 100%;
+					height: 377px;
+
+					h2 {
+						font-size: 60px;
+						line-height: 60px;
+						max-width: 349.68px;
+					}
+
+					p {
+						font-size: 22px;
+						line-height: 2rem;
+						max-width: 349.68px;
+
+					}
+				}
 			}
 		}
 	}

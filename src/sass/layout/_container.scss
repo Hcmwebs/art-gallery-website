@@ -1,6 +1,8 @@
+@use '../abstracts/' as *;
+
 .container {
 	width: min(100%, 1440px);
-	display: grid;
+	@include grid(center);
 	gap: 7.5rem;
 }
 
