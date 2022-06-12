@@ -1,35 +1,38 @@
 @use '../abstracts' as *;
 
 .footer {
+	width: 100%;
+	min-height: 336px;
 	padding-block: $padding * 2;
 	padding-inline: $padding * 3;
-	@include grid(center);
+	display: grid;
+	justify-items: start;
 	grid-template-columns: 1fr;
 	gap: $gap * 2.375;
 	color: $white;
 
-	&-home{
+	&-home {
 		background-color: $blackColor;
 	}
-	&-location{
+	&-location {
 		background-color: $accentColor;
 	}
 
-	&-content {
-		@include flex(column, space-between, flex-start);
-		gap: $gap * 2.375;
-		h5 {
-			text-transform: uppercase;
-		}
-		p {
-			max-width: 17.5rem;
-		}
+	h3 {
+		font-size: 40px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		width: 17.5rem;
 	}
 
 	&-social-media {
 		@include flex(row, space-between, center);
 		gap: $gap * 1.25;
-		justify-self: start;
+		align-self: start;
+		justify-self: end;
 
 		.link {
 			cursor: pointer;
@@ -40,6 +43,22 @@
 			&:hover {
 				color: $accentColor;
 			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.footer {
+		height: 216px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (min-width: 1440px) {
+	.footer {
+		height: 244px;
+
+		p {
+			max-width: 430px;
 		}
 	}
 }
