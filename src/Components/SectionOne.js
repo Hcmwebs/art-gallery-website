@@ -26,8 +26,8 @@ const Section = () => {
 						media='(max-width:1440px)'
 						size={imageGrid1Desktop2x}
 					/>
+					<img src={imageGrid1Mobile} alt='art exhibition' className='img' />
 				</picture>
-				<img src={imageGrid1Mobile} alt='art exhibition' className='img' />
 			</div>
 			<div className='section-body'>
 				<h2>

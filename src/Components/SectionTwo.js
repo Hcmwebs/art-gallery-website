@@ -32,8 +32,8 @@ const SectionTwo = () => {
 						media='(max-width:375px)'
 						size={imageGrid2Mobile2}
 					/>
+					<img src={imageGrid2Mobile} alt='grid2' className='img' />
 				</picture>
-				<img src={imageGrid2Mobile} alt='' className='img' />
 			</div>
 			<div className='section-body'>
 				<div className='section-body-header'>
@@ -53,8 +53,8 @@ const SectionTwo = () => {
 							media='(max-width:375px)'
 							size={imageGrid3Mobile3}
 						/>
+						<img src={imageGrid3Mobile} alt='grid3' className='img' />
 					</picture>
-					<img src={imageGrid3Mobile} alt='' className='img' />
 				</div>
 				<div className='section-body-body'>
 					<h2> Come &amp; be inspired</h2>
