@@ -1,31 +1,31 @@
-import React from 'react';
-import imageHeroMobile from '../assets/mobile/image-hero.jpg';
-import imageHeroTablet from '../assets/tablet/image-hero.jpg';
-import imageHeroDesktop from '../assets/desktop/image-hero.jpg';
-import imageHeroMobile2x from '../assets/mobile/image-hero@2x.jpg';
-import imageHeroTablet2x from '../assets/tablet/image-hero@2x.jpg';
-import imageHeroDesktop2x from '../assets/desktop/image-hero@2x.jpg';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import imageHeroMobile from '../assets/mobile/image-hero.jpg'
+import imageHeroTablet from '../assets/tablet/image-hero.jpg'
+import imageHeroDesktop from '../assets/desktop/image-hero.jpg'
+import imageHeroMobile2x from '../assets/mobile/image-hero@2x.jpg'
+import imageHeroTablet2x from '../assets/tablet/image-hero@2x.jpg'
+import imageHeroDesktop2x from '../assets/desktop/image-hero@2x.jpg'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 	return (
 		<header className='header'>
 			<div className='hero'>
-				<div className="hero-deco"></div>
+				<div className='hero-deco'></div>
 				<div className='hero-image'>
 					<picture>
 						<source
-							srcset={imageHeroMobile}
+							srcSet={imageHeroMobile}
 							media='(max-width: 375px)'
 							size={imageHeroMobile2x}
 						/>
 						<source
-							srcset={imageHeroTablet}
+							srcSet={imageHeroTablet}
 							media='(max-width: 768px)'
 							size={imageHeroTablet2x}
 						/>
 						<source
-							srcset={imageHeroDesktop}
+							srcSet={imageHeroDesktop}
 							media='(max-width: 1440px)'
 							size={imageHeroDesktop2x}
 						/>
@@ -34,7 +34,10 @@ const Header = () => {
 				</div>
 
 				<div className='hero-text'>
-					<h1 className='title'> <span>Moder</span>n <br/> <span>Art Gal</span>lery</h1>
+					<h1 className='title'>
+						{' '}
+						<span>Moder</span>n <br /> <span>Art Gal</span>lery
+					</h1>
 					<p>
 						The arts in the collection of the Modern Art Gallery all started
 						from a spark of inspiration. Will these pieces inspire you? Visit us
@@ -54,7 +57,7 @@ const Header = () => {
 				</div>
 			</div>
 		</header>
-	);
-};
+	)
+}
 
-export default Header;
+export default Header

@@ -18,17 +18,17 @@ const SectionTwo = () => {
 			<div className='section-header'>
 				<picture>
 					<source
-						srcset={imageGrid2Desktop}
+						srcSet={imageGrid2Desktop}
 						media='(max-width:1440px)'
 						size={imageGrid2Desktop2}
 					/>
 					<source
-						srcset={imageGrid2Tablet}
+						srcSet={imageGrid2Tablet}
 						media='(max-width:768px)'
 						size={imageGrid2Tablet2}
 					/>
 					<source
-						srcset={imageGrid2Mobile}
+						srcSet={imageGrid2Mobile}
 						media='(max-width:375px)'
 						size={imageGrid2Mobile2}
 					/>
@@ -39,17 +39,17 @@ const SectionTwo = () => {
 				<div className='section-body-header'>
 					<picture>
 						<source
-							srcset={imageGrid3Desktop}
+							srcSet={imageGrid3Desktop}
 							media='(max-width:1440px)'
 							size={imageGrid3Desktop3}
 						/>
 						<source
-							srcset={imageGrid3Tablet}
+							srcSet={imageGrid3Tablet}
 							media='(max-width:768px)'
 							size={imageGrid3Tablet3}
 						/>
 						<source
-							srcset={imageGrid3Mobile}
+							srcSet={imageGrid3Mobile}
 							media='(max-width:375px)'
 							size={imageGrid3Mobile3}
 						/>

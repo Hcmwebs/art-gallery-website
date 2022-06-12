@@ -12,17 +12,17 @@ const Section = () => {
 			<div className='section-header'>
 				<picture>
 					<source
-						srcset={imageGrid1Mobile}
+						srcSet={imageGrid1Mobile}
 						media='(max-width:375px)'
 						size={imageGrid1Mobile2x}
 					/>
 					<source
-						srcset={imageGrid1Tablet}
+						srcSet={imageGrid1Tablet}
 						media='(max-width:768px)'
 						size={imageGrid1Tablet2x}
 					/>
 					<source
-						srcset={imageGrid1Desktop}
+						srcSet={imageGrid1Desktop}
 						media='(max-width:1440px)'
 						size={imageGrid1Desktop2x}
 					/>
