@@ -1,21 +1,31 @@
 @use '../abstracts/' as *;
 
 .main {
-	max-width: 100%;
+	width: 100%;
 	position: relative;
 	@include grid(center);
 	gap: $gap * 2;
 	padding-inline: $padding;
+
+	&.location {
+		padding: 0;
+		gap: 0;
+	}
 }
 
 @media (min-width: 768px) {
 	.main {
-		width: 690px;
+		max-width: 690px;
+		&.location {
+			width: 100vw;
+			max-width: 100%;
+			margin: 0 auto;
+		}
 	}
 }
 
 @media (min-width: 1440px) {
 	.main {
-		width: 1109px;
+		max-width: 1109px;
 	}
 }

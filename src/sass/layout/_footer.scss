@@ -32,7 +32,7 @@
 		@include flex(row, space-between, center);
 		gap: $gap * 1.25;
 		align-self: start;
-		justify-self: end;
+
 
 		.link {
 			cursor: pointer;
@@ -51,6 +51,10 @@
 	.footer {
 		height: 216px;
 		grid-template-columns: repeat(3, 1fr);
+
+		&-social-media{
+			justify-self: end;
+		}
 	}
 }
 @media (min-width: 1440px) {
