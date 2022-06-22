@@ -12,21 +12,18 @@ const Section = () => {
 			<div className='section-header'>
 				<picture>
 					<source
-						srcSet={imageGrid1Mobile}
-						media='(max-width:375px)'
-						size={imageGrid1Mobile2x}
+						media='(min-width:1440px)'
+						srcSet={`${imageGrid1Desktop} 1440w, ${imageGrid1Desktop2x} 2x`}
 					/>
 					<source
-						srcSet={imageGrid1Tablet}
-						media='(max-width:768px)'
-						size={imageGrid1Tablet2x}
+						media='(min-width:768px)'
+						srcSet={`${imageGrid1Tablet} 768w, ${imageGrid1Tablet2x} 2x`}
 					/>
 					<source
-						srcSet={imageGrid1Desktop}
-						media='(max-width:1440px)'
-						size={imageGrid1Desktop2x}
+						media='(min-width:375px)'
+						srcSet={`${imageGrid1Mobile} 375w, ${imageGrid1Mobile2x}2x`}
 					/>
-					<img src={imageGrid1Mobile} alt='art exhibition' className='img' />
+					<img src={imageGrid1Desktop} alt='art exhibition' className='img' />
 				</picture>
 			</div>
 			<div className='section-body'>

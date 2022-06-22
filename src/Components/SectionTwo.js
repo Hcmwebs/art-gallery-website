@@ -18,42 +18,36 @@ const SectionTwo = () => {
 			<div className='section-header'>
 				<picture>
 					<source
-						srcSet={imageGrid2Desktop}
-						media='(max-width:1440px)'
-						size={imageGrid2Desktop2}
+						media='(min-width:1440px)'
+						srcSet={`${imageGrid2Desktop} 1440w, ${imageGrid2Desktop2} 2x`}
 					/>
 					<source
-						srcSet={imageGrid2Tablet}
-						media='(max-width:768px)'
-						size={imageGrid2Tablet2}
+						media='(min-width:768px)'
+						srcSet={`${imageGrid2Tablet} 768w, ${imageGrid2Tablet2} 2x`}
 					/>
 					<source
-						srcSet={imageGrid2Mobile}
-						media='(max-width:375px)'
-						size={imageGrid2Mobile2}
+						media='(min-width:375px)'
+						srcSet={`${imageGrid2Mobile} 375w, ${imageGrid2Mobile2} 2x`}
 					/>
-					<img src={imageGrid2Mobile} alt='grid2' className='img' />
+					<img src={imageGrid2Desktop} alt='grid2' className='img' />
 				</picture>
 			</div>
 			<div className='section-body'>
 				<div className='section-body-header'>
 					<picture>
 						<source
-							srcSet={imageGrid3Desktop}
-							media='(max-width:1440px)'
-							size={imageGrid3Desktop3}
+							media='(min-width:1440px)'
+							srcSet={`${imageGrid3Desktop} 1440w, ${imageGrid3Desktop3} 2x`}
 						/>
 						<source
-							srcSet={imageGrid3Tablet}
-							media='(max-width:768px)'
-							size={imageGrid3Tablet3}
+							media='(min-width:768px)'
+							srcSet={`${imageGrid3Tablet} 768w, ${imageGrid3Tablet3} 2x`}
 						/>
 						<source
-							srcSet={imageGrid3Mobile}
-							media='(max-width:375px)'
-							size={imageGrid3Mobile3}
+							media='(min-width:375px)'
+							srcSet={`${imageGrid3Mobile} 375w, ${imageGrid3Mobile3} 2x`}
 						/>
-						<img src={imageGrid3Mobile} alt='grid3' className='img' />
+						<img src={imageGrid3Desktop} alt='grid3' className='img' />
 					</picture>
 				</div>
 				<div className='section-body-body'>
