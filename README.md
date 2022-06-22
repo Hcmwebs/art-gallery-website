@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Art Gallery Website solution](https://www.frontendmentor.io/solutions/responsive-project-done-using-reactjs-sass-and-grid-fshsb_B5Y0)
+- [live site URL](https://art-gallery-website-seven.vercel.app/)
 
 ### Built with
 

@@ -15,20 +15,23 @@ const Header = () => {
 				<div className='hero-image'>
 					<picture>
 						<source
-							srcSet={imageHeroMobile}
-							media='(max-width: 375px)'
-							size={imageHeroMobile2x}
+							media='(max-width: 1440px)'
+							srcSet={`${imageHeroDesktop} ${imageHeroDesktop2x}`}
+							// size={imageHeroDesktop2x}
 						/>
+
 						<source
 							srcSet={imageHeroTablet}
 							media='(max-width: 768px)'
 							size={imageHeroTablet2x}
 						/>
+
 						<source
-							srcSet={imageHeroDesktop}
-							media='(max-width: 1440px)'
-							size={imageHeroDesktop2x}
+							srcSet={imageHeroMobile}
+							media='(max-width: 375px)'
+							size={imageHeroMobile2x}
 						/>
+
 						<img src={imageHeroDesktop} alt='hero' className='img' />
 					</picture>
 				</div>
