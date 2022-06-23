@@ -16,6 +16,16 @@
 	}
 	&-location {
 		background-color: $accentColor;
+		color: $blackColor;
+
+		.footer-social-media {
+			.link {
+				color: $blackColor;
+				&:hover {
+					color: $white;
+				}
+			}
+		}
 	}
 
 	h3 {
@@ -32,7 +42,6 @@
 		@include flex(row, space-between, center);
 		gap: $gap * 1.25;
 		align-self: start;
-
 
 		.link {
 			cursor: pointer;
@@ -52,7 +61,7 @@
 		height: 216px;
 		grid-template-columns: repeat(3, 1fr);
 
-		&-social-media{
+		&-social-media {
 			justify-self: end;
 		}
 	}
