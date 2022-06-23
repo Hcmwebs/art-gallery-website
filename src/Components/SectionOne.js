@@ -21,7 +21,7 @@ const Section = () => {
 					/>
 					<source
 						media='(min-width:375px)'
-						srcSet={`${imageGrid1Mobile} 375w, ${imageGrid1Mobile2x}2x`}
+						srcSet={`${imageGrid1Mobile} 375w, ${imageGrid1Mobile2x} 2x`}
 					/>
 					<img src={imageGrid1Desktop} alt='art exhibition' className='img' />
 				</picture>
